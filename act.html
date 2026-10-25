@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <h1 class="main">Welcome Students</h1>
+    <p>Welcome to my interactive profile</p>
+    
+    <div class="card" id="profilecard">
+        <h2>Student Information</h2>
+        <p> John Michael R. Gumba</p>
+        <p>Course: BSIT</p>
+        <p>Year Level: 3rd year</p>
+    </div>
+
+    <button id="change">Change title</button>
+    <button id="hide">Hide Profile</button>
+    <button id="show">Show Profile</button>
+
+    <hr>
+    <h2>Choose your course</h2>
+    <select id="course">
+        <option value="BSIT">BSIT</option>
+        <option value="BSCS">BSCS</option>
+        <option value="BSIS">BSIS</option>
+    </select>
+    <p id="coursemessage">course selector is active</p>
+    
+    <h2>Student list</h2>
+    <p>Registered Student:</p>
+    <table id="studenttable">
+        <thead>
+            <tr><th>No.</th><th>Name</th><th>Course</th><th>Year level</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Juan</td><td>BSIT</td><td>2nd Year</td></tr>
+            <tr><td>2</td><td>Maria</td><td>BSCS</td><td>1st Year</td></tr>
+            <tr><td>3</td><td>Pedro</td><td>BSIS</td><td>3rd Year</td></tr>
+            <tr><td>4</td><td>Ana</td><td>BSIT</td><td>3rd Year</td></tr>
+        </tbody>
+    </table>
+    <p>End of Student list</p>
+
+    <!-- Matched to actscript.js -->
+    <script src="actscript.js"></script>
+</body>
+</html>

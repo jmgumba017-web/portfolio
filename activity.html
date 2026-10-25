@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+    }
+
+    .card{
+        background-color: rgb(139, 173, 17);
+        margin-bottom: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .buttons button{
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: #141414;
+        color: rgb(252, 247, 247);
+        cursor: pointer;
+    }
+
+    .buttons button:hover{
+        background-color: #555;
+    }
+</style>
+<body>
+
+   <!--Main Container-->
+   <div class="card">
+
+    <section class="welcome">
+
+        <h1>Welcome, <a id="profile">Students</a> </h1>
+
+          <div id="profile-info" class="profile-info">
+        <p>Welcome to my Profile</p>
+        <h2>Student Profile</h2>
+        <p><strong>Name:</strong> John Michael R. Gumba</p>
+        <p><strong>Course: <a id="course"></a> </strong></p>
+        <p><strong>Year Level:</strong></p>
+          </div>
+
+    </section>
+
+     <!--Buttons-->
+      <div class="buttons">
+            <button id="changebtn">Change Title</button>
+            <button id="hidenbtn">Hide Profile</button>
+            <button id="showbtn">Show Profile</button>
+        </div>
+    <section class="courses">
+
+        <h2>Choose Your Course</h2>
+
+        <label for="course">Select your course:</label>
+
+        <select id="course">
+            <option value="">--Select Course--</option>
+            <option value="BSIT">BS Information Technology</option>
+            <option value="BSCS">BS Computer Science</option>
+            <option value="BSIS">BS Information System</option>
+            <option value="BSTM">BS TO</option>
+           
+        </select>
+
+        <button id="selectCourse">Select Course</button>
+
+        <p id="courseResult"></p>
+    </section>
+   </div>
+
+     <center>
+        <table border="1" id="table">
+            <tr>
+            <th>BSCS</th>
+            <th>BSTM</th>
+            <th>BSIS</th>
+            <th>BSIT</th>
+            </tr>
+
+            <tr>
+                <td>1ST YEAR</td>
+                <td>1ST YEAR</td>
+                <td>1ST YEAR</td>
+                <td>1ST YEAR</td>
+            </tr>
+
+            <tr>
+                <td>2ND YEAR</td>
+                <td>2ND YEAR</td>
+                <td>2ND YEAR</td>
+                <td>2ND YEAR</td>
+            </tr>
+
+            <tr>
+                <td>3RD YEAR</td>
+                <td>3RD YEAR</td>
+                <td>3RD YEAR</td>
+                <td>3RD YEAR</td>
+            </tr>
+
+             <tr>
+                <td>4TH YEAR</td>
+                <td>4TH YEAR</td>
+                <td>4TH YEAR</td>
+                <td>4TH YEAR</td>
+            </tr>
+        </table>
+        </center>
+
+   <!-- Matched to java.js -->
+   <script src="java.js"></script>
+</body>
+</html>
